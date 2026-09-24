@@ -1,0 +1,19 @@
+# Environment & API keys
+.env
+*.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Vectorstore & temporary data
+vectorstore/*.faiss
+vectorstore/*.pkl
+*.tmp

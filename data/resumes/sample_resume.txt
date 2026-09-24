@@ -1,0 +1,21 @@
+# Candidate Profile: Alex Mercer
+Target Role: AI / Machine Learning Engineer
+
+## Contact Information
+Email: alex.mercer@email.com
+Location: Bangalore, India
+
+## Professional Summary
+Passionate AI Engineer candidate with hands-on experience in building LLM applications, RAG pipelines, LangChain, Python, PyTorch, vector databases (FAISS), and full-stack AI web apps.
+
+## Education
+Bachelor of Technology in Computer Science & Engineering
+GPA: 3.8 / 4.0
+
+## Technical Skills
+- Programming: Python, SQL, C++
+- GenAI & ML: LangChain, Gemini API, PyTorch, FAISS, Embeddings, Prompt Engineering, RAG
+- Frameworks & Tools: Streamlit, FastAPI, Git, Docker
+
+## Projects & Experience
+- AI Career Portal (SmartHire GenAI): Developed an end-to-end RAG career portal with resume parsing, FAISS vector search, CV suggestions, and an AI mentor chatbot.
