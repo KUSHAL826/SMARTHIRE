@@ -4,7 +4,21 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ["GOOGLE_API_KEY"]=os.getenv("GEMINI_API_KEY")
+gemini_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+
+try:
+    import streamlit as st
+    if not gemini_key and hasattr(st, "secrets"):
+        if "GEMINI_API_KEY" in st.secrets:
+            gemini_key = st.secrets["GEMINI_API_KEY"]
+        elif "GOOGLE_API_KEY" in st.secrets:
+            gemini_key = st.secrets["GOOGLE_API_KEY"]
+except Exception:
+    pass
+
+if gemini_key:
+    os.environ["GOOGLE_API_KEY"] = str(gemini_key)
+    os.environ["GEMINI_API_KEY"] = str(gemini_key)
 MODEL = "gemini-3.5-flash-lite"
 EMB_MODEL = "gemini-embedding-001"
 
